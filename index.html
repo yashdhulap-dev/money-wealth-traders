@@ -20,7 +20,7 @@
 
 <header>
   <div class="logo">
-    <img src="logo.png" alt="">
+    <img src="Images/logo.jpeg" alt="">
     <h2>Money Wealth Traders</h2>
   </div>
 
@@ -85,12 +85,6 @@
       <p>Smart investment planning for long term wealth creation.</p>
     </div>
 
-    <div class="service-box">
-      <i class="fa-solid fa-video"></i>
-      <h3>Recorded Lectures</h3>
-      <p>Easy to understand video lectures for beginners and traders.</p>
-    </div>
-
   </div>
 </section>
 
@@ -136,52 +130,104 @@
 
     <!-- BASIC -->
     <div class="package-box">
-      <h3>Starter Plan</h3>
-      <h2>₹2,999 <span>+ GST</span></h2>
-      <p>Perfect for beginners who want to start trading.</p>
+      <h3>BASICS PACKAGE</h3>
+      <h2>₹55,000 <span>+ 18% GST</span></h2>
+      <p>Designed for beginners to understand stock market fundamentals, trading basics, and risk control techniques.</p>
 
       <ul>
-        <li>✔ Basic Stock Market Training</li>
-        <li>✔ Recorded Lectures</li>
-        <li>✔ WhatsApp Support</li>
-      </ul>
-
-      <a href="#contact" class="btn">Get Started</a>
-    </div>
-
-    <!-- STANDARD -->
-    <div class="package-box popular">
-      <h3>Pro Trader</h3>
-      <h2>₹6,999 <span>+ GST</span></h2>
-      <p>Best for active traders who want consistency.</p>
-
-      <ul>
-        <li>✔ Live Trading Sessions</li>
-        <li>✔ Intraday Strategies</li>
-        <li>✔ Risk Management</li>
-        <li>✔ Priority Support</li>
+        <li>✔ Stock Market Guidance</li>
+        <li>✔ Basic Trading Support</li>
+        <li>✔ Risk Management Techniques</li>
+        <li>✔ Regular Market Updates</li>
       </ul>
 
       <a href="#contact" class="btn">Join Now</a>
     </div>
 
-    <!-- PREMIUM -->
+    <!-- ACCOUNT HANDLING -->
+    <div class="package-box popular">
+      <h3>ACCOUNT HANDLING</h3>
+      <h2>₹75,000 <span>+ 18% GST</span></h2>
+      <p>Ideal for traders who prefer professional assistance in managing their trading account with consistent monitoring.</p>
+
+      <ul>
+        <li>✔ Professional Account Handling</li>
+        <li>✔ Daily Trade Monitoring</li>
+        <li>✔ Trade Execution Support</li>
+        <li>✔ Risk Management</li>
+      </ul>
+
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+
+    <!-- INDEX BASIC -->
     <div class="package-box">
-      <h3>Elite Investor</h3>
-      <h2>₹12,999 <span>+ GST</span></h2>
-      <p>Advanced strategies for serious investors.</p>
+      <h3>INDEX BASICS PACKAGE</h3>
+      <h2>₹55,000 <span>+ 18% GST</span></h2>
+      <p>Perfect for beginners who want to start trading in index markets like Nifty and Bank Nifty with basic strategies.</p>
+
+      <ul>
+        <li>✔ Nifty & Bank Nifty Guidance</li>
+        <li>✔ Beginner-Friendly Strategies</li>
+        <li>✔ Basic Index Trading Concepts</li>
+        <li>✔ Daily Market Updates</li>
+      </ul>
+
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+
+    <!-- INDEX OPTION PREMIUM -->
+    <div class="package-box">
+      <h3>INDEX OPTION PREMIUM</h3>
+      <h2>₹1,25,000 <span>+ 18% GST</span></h2>
+      <p>Advanced options trading program for experienced traders focusing on high-level strategies and deeper market insights.</p>
+
+      <ul>
+        <li>✔ Advanced Option Strategies</li>
+        <li>✔ Premium Trading Support</li>
+        <li>✔ Lifetime Learning Access</li>
+        <li>✔ Personal Mentorship</li>
+      </ul>
+
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+
+    <!-- INDEX OPTION STANDARD -->
+    <div class="package-box">
+      <h3>INDEX OPTION STANDARD PACKAGE</h3>
+      <h2>₹2,75,000 <span>+18% GST</span></h2>
+      <p>Complete mentorship program covering trading psychology, portfolio building, and long-term consistency in trading.</p>
 
       <ul>
         <li>✔ Full Market Mentorship</li>
-        <li>✔ Portfolio Guidance</li>
+        <li>✔ Portfolio Building Guidance</li>
         <li>✔ Lifetime Access</li>
-        <li>✔ Personal Support</li>
+        <li>✔ One-to-One Support</li>
       </ul>
 
-      <a href="#contact" class="btn">Enroll Now</a>
+      <a href="#contact" class="btn">Join Now</a>
     </div>
 
-  </div>
+    <!-- ACCOUNT HANDLING SERVICE -->
+    <div class="package-box">
+      <h3>ACCOUNT HANDLING SERVICE</h3>
+      <h2>₹75,000 <span>+18% GST</span></h2>
+      <p>Hands-free trading service where experts manage your account with disciplined strategies and controlled risk exposure.</p>
+
+      <ul>
+        <li>✔ Expert Account Management</li>
+        <li>✔ Portfolio Monitoring</li>
+        <li>✔ Strategy-Based Trading</li>
+        <li>✔ Dedicated Support</li>
+      </ul>
+
+      <a href="#contact" class="btn">Join Now</a>
+    </div>
+
+  </div><br/>
+  <p class="disclaimer">
+  *Disclaimer: Trading in stock market involves financial risk. We do not guarantee profits. Please trade responsibly.*
+</p>
 
 </section>
 
@@ -215,13 +261,16 @@
     </div>
   </div>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="text" placeholder="Your Phone Number" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message"></textarea>
-    <button type="submit">SEND MESSAGE</button>
-  </form>
+  <form class="contact-form" id="contactForm">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="text" name="phone" placeholder="Your Phone Number" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message"></textarea>
+
+  <button type="submit">SEND MESSAGE</button>
+
+</form>
 </section>
 
 <footer class="footer">
@@ -270,15 +319,15 @@
 
       <div class="social-links">
 
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.facebook.com/" target="_blank">
+    <img src="images/fb.png" alt="Facebook">
+  </a>
 
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.instagram.com/" target="_blank">
+    <img src="images/insta.jfif" alt="Instagram">
+  </a>
 
-        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-
-        <a href="#"><i class="fa-brands fa-telegram"></i></a>
-
-      </div>
+</div>
 
     </div>
 

@@ -33,3 +33,39 @@ function changeBackground(){
 }
 
 setInterval(changeBackground, 4000);
+
+
+const form = document.getElementById("contactForm");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: form.name.value,
+    phone: form.phone.value,
+    email: form.email.value,
+    message: form.message.value
+  };
+
+  try {
+    const res = await fetch("/api/sendMail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      alert("Message Sent Successfully ✅");
+      form.reset();
+    } else {
+      alert("Error sending message ❌");
+    }
+
+  } catch (err) {
+    alert("Server error ❌");
+  }
+});
